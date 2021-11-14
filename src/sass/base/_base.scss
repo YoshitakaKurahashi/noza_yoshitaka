@@ -31,10 +31,4 @@ a {
   text-decoration: none;
   color: inherit;
   transition: opacity 0.3s;
-  opacity: 0.8;
-  @include mq("md") {
-    &:hover {
-      opacity: 1;
-    }
-  }
 }
