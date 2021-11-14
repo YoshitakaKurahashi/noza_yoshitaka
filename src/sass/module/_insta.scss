@@ -1,0 +1,22 @@
+
+
+// インスタ集
+.insta-contents {
+display: flex;
+flex-wrap: wrap;
+max-width: rem(1200);
+width: 100%;
+}
+
+.insta-content {
+  max-width: rem(300);
+  width: 100%;
+}
+
+.insta-content__img {
+// max-width: rem(300);
+// width: 100%;
+  img {
+
+  }
+}

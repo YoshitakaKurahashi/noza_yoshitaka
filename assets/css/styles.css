@@ -266,6 +266,23 @@ select::-ms-expand {
   letter-spacing: 2%;
 }
 
+.insta-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1200px;
+  max-width: 75rem;
+  width: 100%;
+}
+
+.insta-content {
+  max-width: 300px;
+  max-width: 18.75rem;
+  width: 100%;
+}
+
 .l-inner {
   width: 100%;
   padding-right: 25px;
