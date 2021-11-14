@@ -1,0 +1,63 @@
+.header {
+  width: 100%;
+  position: fixed;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  max-width: rem(1250);
+}
+
+.header__logo {
+  max-width: rem(200);
+  width: 100%;
+  margin-right: auto;
+  img {
+  }
+}
+
+.header__nav {
+}
+
+.header__lists {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__list {
+  margin-right: rem(40);
+  a {
+    width: 100%;
+    color: $white;
+    font-weight: $normal;
+    line-height: rem(32);
+    letter-spacing: 2%;
+    display: inline-block;
+    padding: rem(34) 0;
+    position: relative;
+
+    &:hover {
+      opacity: .6;
+    }
+
+    &:after {
+      position: absolute;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: #FFBA0E;
+      bottom: -6px; /*アンダーラインが現れ始める位置（aタグの下辺からの高さ）*/
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s;
+      }
+      
+      &:hover::after {
+      visibility: visible;
+      bottom: 5px;
+      opacity: 1;
+      }
+  }
+}

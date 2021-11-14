@@ -28,3 +28,34 @@
     }
   }
 }
+
+
+.header__button {
+  max-width: rem(200);
+  width: 100%;
+  a {
+    line-height: rem(16);
+    width: 100%;
+    transition: all 0.2s ease;
+    padding: rem(22) 0;
+    position: relative;
+    overflow: hidden;
+  
+  &:before {
+    content:"";
+    position: absolute;
+    top: -45px;
+    left: -60px;
+    height:190px;
+    width:30px;
+    background : #fff;
+    opacity: 0.3;
+    transform: rotate(40deg);
+    transition: 0.5s;
+  }
+  &:hover:before {
+    left:98%;
+  }
+
+  }
+}

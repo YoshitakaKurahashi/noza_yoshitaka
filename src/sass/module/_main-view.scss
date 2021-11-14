@@ -1,0 +1,53 @@
+.main-view {
+  background: url(/assets/images/common/mv.png) center center / cover;
+  width: 100%;
+  // height: rem(900);
+  padding: rem(387) rem(0) rem(270) rem(120);
+}
+
+.main-view__title {
+  margin-bottom: rem(40);
+
+  a {
+    display: inline-block;
+    font-size: rem(64);
+    font-weight: $bold;
+    line-height: rem(60);
+    letter-spacing: 5%;
+    padding: rem(31) 0 rem(31) rem(30);
+    max-width: rem(737);
+    width: 100%;
+    color: $white;
+    background: linear-gradient(90deg, #ff0000 0%, #ffbb0e 100%);
+    border: 1px solid transparent;
+    outline: 1px solid;
+    outline-color: #878787;
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+
+    /* マウスオーバー時 */
+    &:hover {
+      border-color: #fff;
+      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.2);
+      outline-color: transparent;
+      outline-offset: 50px;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.445);
+      cursor: pointer;
+    }
+  }
+}
+
+.main-view__liad {
+  color: $white;
+  font-size: rem(24);
+  line-height: rem(36);
+  font-weight: $bold;
+  span {
+    display: inline-block;
+    margin-top: rem(10);
+    line-height: rem(32);
+    font-family: $third-font-family;
+  }
+}

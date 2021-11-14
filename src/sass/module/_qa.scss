@@ -1,203 +1,86 @@
-// 
-HTML CSS JSResult Skip Results Iframe
-EDIT ON
-/*====================================================================
-.s_04 .accordion_one
-====================================================================*/
-.s_04 .accordion_one {
-  max-width: 1024px;
-  margin: 0 auto;
+.qa-contents {
 }
-.s_04 .accordion_one .accordion_header {
-  background-color: #db0f2f;
-  color: #fff;
-  font-size: 26px;
-  font-weight: bold;
-  padding: 20px 11%;
-  text-align: center;
+
+.qa-content {
+  max-width: rem(750);
+  width: 100%;
+  margin: auto;
+
+  &:not(:last-child) {
+  margin-bottom: rem(40);
+  }
+}
+
+
+.qa-content__question {
+  width: 100%;
+  line-height: rem(32);
+  padding-left: rem(95);
+  padding-top: rem(20);
+  padding-bottom: rem(25);
+  background: $white;
+  color: #1a1a1a;
+  border-radius: rem(10) rem(10) 0 0;
   position: relative;
-  z-index: +1;
-  cursor: pointer;
-  transition-duration: 0.2s;
+
+  &::before {
+    content: "Q";
+    width: rem(43);
+    height: rem(43);
+    border-radius: 50%;
+    background: #0e112c;
+    color: $white;
+    font-size: rem(24);
+    line-height: rem(43);
+    text-align: center;
+    font-weight: 900;
+    position: absolute;
+    top: rem(14);
+    left: rem(20);
+  }
+
 }
-.s_04 .accordion_one:nth-of-type(2) .accordion_header {
-    background-color: #ff9a05;
-}
-.s_04 .accordion_one:nth-of-type(3) .accordion_header {
-    background-color: #1c85d8;
-}
-.s_04 .accordion_one .accordion_header:hover {
-  opacity: .8;
-}
-.s_04 .accordion_one .accordion_header .i_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.qa-content__qustion--icon {
+  width: rem(24);
   position: absolute;
-  top: 50%;
-  right: 5%;
-  width: 40px;
-  height: 40px;
-  border: 1px solid #fff;
-  margin-top: -20px;
-  box-sizing: border-box;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  transform-origin: center center;
-  transition-duration: 0.2s;
+  top: rem(27);
+  right: rem(20);
+  img {
+  }
 }
-.s_04 .accordion_one .accordion_header.stay .i_box {
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-.s_04 .accordion_one .accordion_header .i_box .one_i {
-  display: block;
-  width: 18px;
-  height: 18px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  transform-origin: center center;
-  transition-duration: 0.2s;
+
+.qa-content__answer {
+  width: 100%;
+  line-height: rem(32);
+  letter-spacing: 2%;
+  padding-left: rem(95);
+  padding-right: rem(20);
+  padding-top: rem(20);
+  padding-bottom: rem(20);
+  background: #0e112c;
+  color: $white;
+  border-radius: 0 0 rem(10) rem(10);
   position: relative;
-}
-.s_04 .accordion_one .accordion_header.stay .i_box .one_i {
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-.s_04 .accordion_one .accordion_header.stay.open .i_box .one_i {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.s_04 .accordion_one .accordion_header.open .i_box {
-  -webkit-transform: rotate(-360deg);
-  transform: rotate(-360deg);
-}
-.s_04 .accordion_one .accordion_header.stay.open .i_box {
-  -webkit-transform: rotate(315eg);
-  transform: rotate(315deg);
-}
-.s_04 .accordion_one .accordion_header .i_box .one_i:before, .s_04 .accordion_one .accordion_header .i_box .one_i:after {
-  display: flex;
-  content: '';
-  background-color: #fff;
-  border-radius: 10px;
-  width: 18px;
-  height: 4px;
-  position: absolute;
-  top: 7px;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  transform-origin: center center;
-}
-.s_04 .accordion_one .accordion_header .i_box .one_i:before {
-  width: 4px;
-  height: 18px;
-  top: 0;
-  left: 7px;
-}
-.s_04 .accordion_one .accordion_header.stay .i_box .one_i:before {
-  content: none;
-}
-.s_04 .accordion_one .accordion_header.open .i_box .one_i:before {
-  content: none;
-}
-.s_04 .accordion_one .accordion_header.stay.open .i_box .one_i:before {
-  content: "";
-}
-.s_04 .accordion_one .accordion_header.open .i_box .one_i:after {
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-.s_04 .accordion_one .accordion_header.stay.open .i_box .one_i:after {
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-.s_04 .accordion_one .accordion_inner {
   display: none;
-  padding: 30px 30px;
-  border-left: 2px solid #db0f2f;
-  border-right: 2px solid #db0f2f;
-  border-bottom: 2px solid #db0f2f;
-  box-sizing: border-box;
+
+  &::before {
+    content: "A";
+    width: rem(43);
+    height: rem(43);
+    border-radius: 50%;
+    background: #f0f0f0;
+    color: #0E112C;
+    font-size: rem(24);
+    line-height: rem(43);
+    text-align: center;
+    font-weight: 900;
+    position: absolute;
+    top: rem(20);
+    left: rem(20);
+  }
 }
-.s_04 .accordion_one .accordion_inner.stay {
+
+.is-open {
   display: block;
-}
-.s_04 .accordion_one:nth-of-type(2) .accordion_inner {
-  border-left: 2px solid #ff9a05;
-  border-right: 2px solid #ff9a05;
-  border-bottom: 2px solid #ff9a05;
-}
-.s_04 .accordion_one:nth-of-type(3) .accordion_inner {
-  border-left: 2px solid #1c85d8;
-  border-right: 2px solid #1c85d8;
-  border-bottom: 2px solid #1c85d8;
-}
-.s_04 .accordion_one .accordion_inner .box_one {
-  height: 300px;
-}
-.s_04 .accordion_one .accordion_inner p.txt_a_ac {
-  margin: 0;
-}
-@media screen and (max-width: 1024px) {
-  .s_04 .accordion_one .accordion_header {
-    font-size: 18px;
-  }
-  .s_04 .accordion_one .accordion_header .i_box {
-    width: 30px;
-    height: 30px;
-    margin-top: -15px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .s_04 .accordion_one .accordion_header {
-    font-size: 16px;
-    text-align: left;
-    padding: 15px 60px 15px 15px;
-  }
-}
-
-/*====================================================================
-以下は不要です。
-====================================================================*/
-
-body {
-  font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  font-size: 16px;
-  letter-spacing: .025em;
-  line-height: 1.8;
-  margin: 0;
-}
-@media screen and (max-width: 1024px) {
-  body {
-    font-size: 14px;
-  }
-}
-.section {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 20px 20px 500px;
-}
-.section p._a {
-  font-size: 12px;
-  font-weight: bold;
-  margin: 30px 0 0;
-}
-.section p._a .link {
-  display: inline-block;
-  color: #607D8B;
-  padding-left: 1.3em;
-  text-indent: -1.3em;
-}
-.section p._a .link:before {
-  content: '';
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-top: 2px solid #607D8B;
-  border-right: 2px solid #607D8B;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  margin-right: 10px;
 }
