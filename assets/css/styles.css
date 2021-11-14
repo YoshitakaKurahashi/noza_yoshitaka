@@ -178,6 +178,36 @@ select::-ms-expand {
   margin: 1px;
 }
 
+.button a {
+  display: inline-block;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 32px;
+  line-height: 2rem;
+  letter-spacing: 2%;
+  padding: 20px 0;
+  padding: 1.25rem 0;
+  max-width: 381px;
+  max-width: 23.8125rem;
+  width: 100%;
+  border-radius: 6.25rem;
+  border: 5px solid #060c41;
+  border-bottom: 10px solid #060c41;
+  color: #060c41;
+  background: #ffba0e;
+  text-align: center;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button a:hover {
+  margin-top: 3px;
+  border-bottom: 5px solid #060c41;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
 .l-inner {
   width: 100%;
   padding-right: 25px;
