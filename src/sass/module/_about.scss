@@ -1,0 +1,113 @@
+.about {
+  width: 100%;
+  background: url(/assets/images/common/about-back.jpg) center center / cover;
+  position: relative;
+  padding: rem(144) 0 rem(146);
+}
+
+.section__title--about {
+  color: $white;
+  letter-spacing: 5%;
+  text-align: center;
+  margin-bottom: rem(82);
+}
+
+.section__title-back--about {
+  color: rgba($color: #000000, $alpha: 0.5);
+  position: absolute;
+  top: 0;
+  left: rem(25);
+}
+
+.about-inner {
+  max-width: rem(1250);
+  width: 100%;
+  margin: auto;
+}
+
+.about__contents {
+}
+
+.about__content {
+  display: flex;
+  justify-content: center;
+
+  &:first-child {
+    .about__content--img::after {
+      background: url(/assets/images/common/Ⅰ.png) center center/ contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: rem(62);
+  }
+
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+
+    .about-card {
+      margin: 0;
+      margin-right: rem(67);
+    }
+
+    .about__content--img::after {
+      background: url(/assets/images/common/Ⅱ.png) center center / contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:last-child {
+    .about__content--img::after {
+      background: url(/assets/images/common/Ⅲ.png) center center / contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: rem(62);
+  }
+}
+
+.about__content--img {
+  max-width: rem(600);
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: rem(-57);
+    left: rem(10);
+    width: rem(120);
+    height: rem(120);
+    background-repeat: no-repeat;
+  }
+
+  img {
+    max-width: rem(600);
+  }
+}
+
+.about__cards {
+}
+
+.about-card {
+  text-align: left;
+  font-weight: $normal;
+  color: $white;
+  max-width: rem(533);
+  margin-left: rem(67);
+}
+
+.about-card__lead {
+  font-size: rem(36);
+  line-height: rem(36);
+  letter-spacing: 2%;
+  margin-bottom: rem(30);
+}
+
+.about-card__text {
+  line-height: rem(40);
+  letter-spacing: 5%;
+}
