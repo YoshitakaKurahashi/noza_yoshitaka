@@ -1,0 +1,25 @@
+// セクションタイトル
+.section__title {
+  font-size: rem(48);
+  font-weight: $bold;
+  line-height: rem(48);
+}
+
+.section__title--about {
+  color: $white;
+  letter-spacing: 5%;
+}
+
+
+// セクションタイトル（背景タイトル）
+.section__title-back {
+  text-transform: uppercase;
+  font-size: rem(150);
+  font-weight: $bold;
+  line-height: rem(150);
+  letter-spacing: 2%;
+}
+
+.section__title-back--about {
+  color: rgba($color: #000000, $alpha: .5);
+}

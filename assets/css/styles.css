@@ -178,6 +178,27 @@ select::-ms-expand {
   margin: 1px;
 }
 
+.about-card {
+  text-align: left;
+  font-weight: 500;
+  max-width: 533px;
+  max-width: 33.3125rem;
+}
+
+.about-card__lead {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 2%;
+}
+
+.about-card__text {
+  line-height: 40px;
+  line-height: 2.5rem;
+  letter-spacing: 5%;
+}
+
 .button a {
   display: inline-block;
   font-weight: 700;
@@ -225,6 +246,33 @@ select::-ms-expand {
     padding-right: 20px;
     padding-left: 20px;
   }
+}
+
+.section__title {
+  font-size: 48px;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 48px;
+  line-height: 3rem;
+}
+
+.section__title--about {
+  color: #FFFFFF;
+  letter-spacing: 5%;
+}
+
+.section__title-back {
+  text-transform: uppercase;
+  font-size: 150px;
+  font-size: 9.375rem;
+  font-weight: 700;
+  line-height: 150px;
+  line-height: 9.375rem;
+  letter-spacing: 2%;
+}
+
+.section__title-back--about {
+  color: rgba(0, 0, 0, .5);
 }
 
 .appp {

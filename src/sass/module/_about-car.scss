@@ -1,0 +1,18 @@
+.about-card {
+  text-align: left;
+  font-weight: $normal;
+  // color: $white;
+  max-width: rem(533);
+  
+}
+
+.about-card__lead {
+  font-size: rem(36);
+  line-height: rem(36);
+  letter-spacing: 2%;
+}
+
+.about-card__text {
+  line-height: rem(40);
+  letter-spacing: 5%;
+}
