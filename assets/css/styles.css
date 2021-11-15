@@ -261,6 +261,8 @@ select::-ms-expand {
   max-width: 37.5rem;
   width: 100%;
   position: relative;
+  vertical-align: bottom;
+  line-height: 1em;
 }
 
 .about__content--img::after {
@@ -278,8 +280,7 @@ select::-ms-expand {
 }
 
 .about__content--img img {
-  max-width: 600px;
-  max-width: 37.5rem;
+  display: block;
 }
 
 .about-card {
@@ -689,6 +690,10 @@ select::-ms-expand {
 
 .is-open {
   display: block;
+}
+
+.recuruit {
+  background: url(/assets/images/common/recuruit-back.png) center center/cover;
 }
 
 .section__title {
