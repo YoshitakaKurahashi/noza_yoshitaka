@@ -457,6 +457,207 @@ select::-ms-expand {
   letter-spacing: 2%;
 }
 
+.footer {
+  background: #000000;
+  padding-top: 30px;
+  padding-top: 1.875rem;
+  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
+}
+
+.footer__logo {
+  max-width: 200px;
+  max-width: 12.5rem;
+  width: 100%;
+  margin: auto;
+}
+
+.footer__nav {
+  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
+}
+
+.footer__lists {
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__list {
+  margin: 0 20px;
+  margin: 0 1.25rem;
+}
+
+.footer__list a {
+  display: inline-block;
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  padding-bottom: 15px;
+  padding-bottom: 0.9375rem;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.footer__list a:hover {
+  opacity: .6;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__icon {
+  margin: 0 11px;
+  margin: 0 0.6875rem;
+}
+
+.footer__icon a {
+  display: block;
+  width: 40px;
+  width: 2.5rem;
+  height: 40px;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.footer__icon a:hover {
+  opacity: .6;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.footer__icon a:hover i {
+  opacity: .6;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.footer__icon i {
+  margin: auto;
+  width: 40px;
+  width: 2.5rem;
+  color: #000000;
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 40px;
+  line-height: 2.5rem;
+  text-align: center;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.application-form {
+  background: url(/assets/images/common/form-back.png) center center/cover;
+  padding-top: 150px;
+  padding-top: 9.375rem;
+  padding-bottom: 150px;
+  padding-bottom: 9.375rem;
+}
+
+.application-form__inner {
+  max-width: 920px;
+  max-width: 57.5rem;
+  width: 100%;
+  padding: 60px 145px;
+  padding: 3.75rem 9.0625rem;
+  background: #FFFFFF;
+  border: 10px solid #a3a3a3;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section__title--form {
+  text-align: center;
+  letter-spacing: 2%;
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+
+.application-form__lead {
+  line-height: 32px;
+  line-height: 2rem;
+  letter-spacing: 2%;
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+
+.form label {
+  max-width: 212px;
+  max-width: 13.25rem;
+  display: block;
+  margin-right: auto;
+  color: #333333;
+}
+
+.form input,
+.form textarea {
+  max-width: 400px;
+  max-width: 25rem;
+  width: calc(100% - 13.25rem);
+  display: block;
+  border: 1px solid #5b5b5b;
+  padding: 17px 20px;
+  padding: 1.0625rem 1.25rem;
+  line-height: 17px;
+  line-height: 1.0625rem;
+}
+
+.form input::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
+  color: #A4A4A4;
+}
+
+.form input::-moz-placeholder,
+.form textarea::-moz-placeholder {
+  color: #A4A4A4;
+}
+
+.form input::-ms-input-placeholder,
+.form textarea::-ms-input-placeholder {
+  color: #A4A4A4;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #A4A4A4;
+}
+
+.form textarea {
+  max-height: 200px;
+  max-height: 12.5rem;
+  height: 100%;
+}
+
+.form__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -1029,6 +1230,66 @@ select::-ms-expand {
   background: #0E112C;
   background: -webkit-gradient(linear, left top, left bottom, from(#0E112C), color-stop(25%, #0E112C), color-stop(25%, #ACACAC), to(#ACACAC));
   background: linear-gradient(180deg, #0E112C 0%, #0E112C 25%, #ACACAC 25%, #ACACAC 100%);
+}
+
+.summary {
+  background: url(/assets/images/common/under-back.png) center center/cover;
+  padding: 50px 40px;
+  padding: 3.125rem 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.summary-inner {
+  padding-top: 125px;
+  padding-top: 7.8125rem;
+  padding-bottom: 125px;
+  padding-bottom: 7.8125rem;
+  position: relative;
+  width: 100%;
+}
+
+.summary-inner::before {
+  content: "";
+  background: url(/assets/images/common/ryota-noza-2.png) center center/cover;
+  width: 58.8%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.summary__content {
+  max-width: 700px;
+  max-width: 43.75rem;
+  background: #FFFFFF;
+  padding: 45px 20px 45px 29px;
+  padding: 2.8125rem 1.25rem 2.8125rem 1.8125rem;
+  text-align: left;
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 54px;
+  line-height: 3.375rem;
+  font-weight: 700;
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  position: relative;
+  z-index: 100;
+}
+
+.summary__content span {
+  display: inline-block;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 32px;
+  line-height: 2rem;
+  font-family: "Nothing You Could Do", cursive;
 }
 
 .appp {

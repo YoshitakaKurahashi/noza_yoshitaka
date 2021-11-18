@@ -1,0 +1,46 @@
+.summary {
+  background: url(/assets/images/common/under-back.png) center center / cover;
+  padding: rem(50) rem(40);
+  display: flex;
+  align-items: center;
+}
+
+.summary-inner {
+  padding-top: rem(125);
+  padding-bottom: rem(125);
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    background: url(/assets/images/common/ryota-noza-2.png) center center /
+      cover;
+    width: 58.8%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+}
+
+.summary__content {
+  max-width: rem(700);
+  background: $white;
+  padding: rem(45) rem(20) rem(45) rem(29);
+  text-align: left;
+  font-size: rem(36);
+  line-height: rem(54);
+  font-weight: $bold;
+  margin-left: auto;
+  margin-bottom: rem(20);
+  position: relative;
+  z-index: 100;
+
+  span {
+    display: inline-block;
+    font-size: rem(24);
+    line-height: rem(32);
+    font-family: $third-font-family;
+  }
+}
