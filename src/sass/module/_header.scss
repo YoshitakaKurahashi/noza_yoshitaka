@@ -1,7 +1,14 @@
 .header {
+  background: rgba($color: #000000, $alpha: 1.0);
   width: 100%;
   position: fixed;
   z-index: 999;
+  transition: .3s all;
+}
+
+.header.transform {
+  background: rgba($color: #000000, $alpha: .8);
+
 }
 
 .header__inner {

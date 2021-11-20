@@ -820,9 +820,16 @@ select::-ms-expand {
 }
 
 .header {
+  background: black;
   width: 100%;
   position: fixed;
   z-index: 999;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.header.transform {
+  background: rgba(0, 0, 0, .8);
 }
 
 .header__inner {
