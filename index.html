@@ -422,8 +422,11 @@
         <!-- /.form__lead -->
         <form action="" class="form">
           <div class="form__content">
-            <label for="" class="label">お名前</label
-            ><!-- /.label -->
+            <div class="form__label">
+              <label for="" class="label">お名前</label
+              ><!-- /.label -->
+            </div>
+            <!-- /.form__label -->
             <input
               type="text"
               class="input"
@@ -432,8 +435,11 @@
           </div>
           <!-- /.form__content -->
           <div class="form__content">
-            <label for="" class="label">フリガナ</label
-            ><!-- /.label -->
+            <div class="form__label">
+              <label for="" class="label">フリガナ</label
+              ><!-- /.label -->
+            </div>
+            <!-- /.form__label -->
             <input
               type="text"
               class="input"
@@ -442,8 +448,11 @@
           </div>
           <!-- /.form__content -->
           <div class="form__content">
-            <label for="" class="label">生年月日</label
-            ><!-- /.label -->
+            <div class="form__label">
+              <label for="" class="label">生年月日</label
+              ><!-- /.label -->
+            </div>
+            <!-- /.form__label -->
             <input
               type="text"
               class="input"
@@ -452,8 +461,11 @@
           </div>
           <!-- /.form__content -->
           <div class="form__content">
-            <label for="" class="label">メールアドレス</label
-            ><!-- /.label -->
+            <div class="form__label">
+              <label for="" class="label">メールアドレス</label
+              ><!-- /.label -->
+            </div>
+            <!-- /.form__label -->
             <input
               type="text"
               class="input"
@@ -462,8 +474,11 @@
           </div>
           <!-- /.form__content -->
           <div class="form__content">
-            <label for="" class="label">ご住所</label
-            ><!-- /.label -->
+            <div class="form__label">
+              <label for="" class="label">ご住所</label
+              ><!-- /.label -->
+            </div>
+            <!-- /.form__label -->
             <input
               type="text"
               class="input"
@@ -472,23 +487,34 @@
           </div>
           <!-- /.form__content -->
           <div class="form__content">
-            <label for="" class="label">ご質問など</label
-            ><!-- /.label -->
+            <div class="form__label">
+              <label for="" class="label">ご質問など</label
+              ><!-- /.label -->
+            </div>
+            <!-- /.form__label -->
             <textarea
               name=""
               id=""
               cols="30"
               rows="10"
               placeholder="ご質問などがあればご記入ください"
+              class="textarea"
             ></textarea
             ><!-- /# -->
           </div>
           <!-- /.form__content -->
-          <label for="" class="check-label">
-            <input type="text" class="form-check" />
-            <span><a href="">プライバシーポリシーに同意する</a></span> </label
-          ><!-- /.check-label -->
-          <div class="submit-button"><a href=""> 送信する</a></div>
+          <div class="form__check">
+            <label for="subscribe" class="check-label">
+              <input type="checkbox" class="form-check" id="subscribe" />
+              <span></span> <a href="">プライバシーポリシーに同意する</a></label
+            ><!-- /.check-label -->
+          </div>
+          <!-- /.form__check -->
+          <div class="submit-button">
+            <a href="">
+              <input type="submit" value="送信する" />
+            </a>
+          </div>
           <!-- /.submit-button -->
         </form>
         <!-- /.form -->
