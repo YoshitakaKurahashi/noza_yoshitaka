@@ -13,7 +13,9 @@ jQuery(function ($) {
   topBtn.hide(); // ボタンの表示設定
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 70) {
+    heroBottom = $('.main-view').innerHeight();
+
+    if ($(this).scrollTop() > heroBottom) {
       // 指定px以上のスクロールでボタンを表示
       topBtn.fadeIn();
     } else {

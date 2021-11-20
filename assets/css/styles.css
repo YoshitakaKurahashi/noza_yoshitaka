@@ -726,6 +726,9 @@ select::-ms-expand {
   padding: 1.0625rem 1.25rem;
   line-height: 17px;
   line-height: 1.0625rem;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  border-radius: 0.125rem;
 }
 
 .input::-webkit-input-placeholder,
@@ -746,6 +749,13 @@ select::-ms-expand {
 .input::placeholder,
 .textarea::placeholder {
   color: #a4a4a4;
+}
+
+.input:hover,
+.textarea:hover {
+  border: 1px solid #5b5b5b;
+  -webkit-box-shadow: 0 0 0.5rem #5b5b5b;
+          box-shadow: 0 0 0.5rem #5b5b5b;
 }
 
 .textarea {
@@ -823,11 +833,8 @@ select::-ms-expand {
 
 .form-check + span:hover::before {
   border: 1px solid #5b5b5b;
-  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="4" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(91,91,91,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
-  -webkit-filter: drop-shadow(0 0 4px #5b5b5b);
-          filter: drop-shadow(0 0 4px #5b5b5b);
-  -webkit-box-shadow: 0 0 4px #5b5b5b inset;
-          box-shadow: 0 0 4px #5b5b5b inset;
+  -webkit-box-shadow: 0 0 0.5rem #5b5b5b;
+          box-shadow: 0 0 0.5rem #5b5b5b;
 }
 
 .form-check + span:active::before {
