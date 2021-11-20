@@ -591,7 +591,6 @@ select::-ms-expand {
   height: 40px;
   height: 2.5rem;
   border-radius: 50%;
-  background: #FFFFFF;
   cursor: pointer;
   -webkit-transition: .3s all;
   transition: .3s all;
@@ -599,26 +598,6 @@ select::-ms-expand {
 
 .footer__icon a:hover {
   opacity: .6;
-  -webkit-transition: .3s all;
-  transition: .3s all;
-}
-
-.footer__icon a:hover i {
-  opacity: .6;
-  -webkit-transition: .3s all;
-  transition: .3s all;
-}
-
-.footer__icon i {
-  margin: auto;
-  width: 40px;
-  width: 2.5rem;
-  color: #000000;
-  font-size: 30px;
-  font-size: 1.875rem;
-  line-height: 40px;
-  line-height: 2.5rem;
-  text-align: center;
   -webkit-transition: .3s all;
   transition: .3s all;
 }
@@ -1509,6 +1488,48 @@ select::-ms-expand {
 
 .button__recuruit {
   text-align: center;
+}
+
+/* fadeUp */
+.fadeUp {
+  -webkit-animation-name: fadeUpAnime;
+          animation-name: fadeUpAnime;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+.fadeUpTrigger {
+  opacity: 0;
 }
 
 .section__title {

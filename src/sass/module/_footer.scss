@@ -54,28 +54,13 @@
     width: rem(40);
     height: rem(40);
     border-radius: 50%;
-    background: $white;
     cursor: pointer;
     transition: .3s all;
 
     &:hover {
       opacity: .6;
       transition: .3s all;
-
-      i {
-        opacity: .6;
-        transition: .3s all;
-      }
     }
   }
 
-  i {
-    margin: auto;
-    width: rem(40);
-    color: $black;
-    font-size: rem(30);
-    line-height: rem(40);
-    text-align: center;
-    transition: .3s all;
-  }
 }
