@@ -1189,6 +1189,17 @@ select::-ms-expand {
   }
 }
 
+.pagetop {
+  position: fixed;
+  bottom: 22px;
+  bottom: 1.375rem;
+  right: 40px;
+  right: 2.5rem;
+  max-width: 150px;
+  max-width: 9.375rem;
+  width: 100%;
+}
+
 .question {
   background: url(/assets/images/common/q&a-back.png) center center/cover;
   padding-top: 146px;
