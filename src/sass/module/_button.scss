@@ -17,14 +17,16 @@
     line-height: rem(32);
     max-width: rem(381);
     width: 100%;
-    transition: all 0.2s ease;
+    transition: none;
     padding: rem(20) 0;
-    border-bottom: 10px solid #060c41;
+    box-shadow: 0 10px 0 #060c41;
+    // -webkit-transition: none;
+    position: relative;
 
     &:hover {
-      margin-top: 3px;
-      border-bottom: 5px solid #060c41;
-      transition: all 0.2s ease;
+      top: 5px;
+      box-shadow: 0 5px 0 #060c41;
+      // box-shadow: none;
     }
   }
 }

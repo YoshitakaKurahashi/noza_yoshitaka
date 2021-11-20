@@ -12,3 +12,18 @@
     padding-left: $padding-sp;
   }
 }
+
+
+.l-max-width {
+  max-width: rem(1440);
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.l-max-width__insta {
+  max-width: rem(2000);
+  width: 100%;
+  margin: auto;
+  position: relative;
+}

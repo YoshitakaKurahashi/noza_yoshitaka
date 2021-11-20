@@ -329,18 +329,19 @@ select::-ms-expand {
   max-width: 381px;
   max-width: 23.8125rem;
   width: 100%;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: none;
+  transition: none;
   padding: 20px 0;
   padding: 1.25rem 0;
-  border-bottom: 10px solid #060c41;
+  -webkit-box-shadow: 0 10px 0 #060c41;
+          box-shadow: 0 10px 0 #060c41;
+  position: relative;
 }
 
 .button__Application a:hover {
-  margin-top: 3px;
-  border-bottom: 5px solid #060c41;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  top: 5px;
+  -webkit-box-shadow: 0 5px 0 #060c41;
+          box-shadow: 0 5px 0 #060c41;
 }
 
 .header__button {
@@ -1078,6 +1079,15 @@ select::-ms-expand {
   width: 100%;
 }
 
+.insta-content__img img:hover {
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+  -webkit-transform: translateY(-10px) scale(1.2) rotate(3deg);
+          transform: translateY(-10px) scale(1.2) rotate(3deg);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
 .l-inner {
   width: 100%;
   padding-right: 25px;
@@ -1092,6 +1102,22 @@ select::-ms-expand {
     padding-right: 20px;
     padding-left: 20px;
   }
+}
+
+.l-max-width {
+  max-width: 1440px;
+  max-width: 90rem;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.l-max-width__insta {
+  max-width: 2000px;
+  max-width: 125rem;
+  width: 100%;
+  margin: auto;
+  position: relative;
 }
 
 .main-view {
