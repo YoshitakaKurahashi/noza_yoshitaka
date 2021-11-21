@@ -103,5 +103,14 @@ jQuery(function ($) {
 
       $submit.addClass('-disabled');
     }
+  }); // burgerメニュー
+
+  $(".openbtn2").click(function () {
+    $(this).toggleClass('active');
+    $('.burger__lists').toggleClass('is-active');
+  });
+  $(".burger__list").click(function () {
+    $(this).removeClass('active');
+    $(".burger__lists").removeClass('is-active');
   });
 });

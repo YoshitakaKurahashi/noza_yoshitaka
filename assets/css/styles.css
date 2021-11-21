@@ -400,6 +400,122 @@ select::-ms-expand {
   }
 }
 
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .burger {
+    display: block;
+  }
+}
+
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn2 {
+  position: relative;
+  /*ボタン内側の基点となるためrelativeを指定*/
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/*ボタン内側*/
+.openbtn2 span {
+  display: inline-block;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  /*アニメーションの設定*/
+  position: absolute;
+  left: 13px;
+  height: 2px;
+  background-color: #FFFFFF;
+  z-index: 2001;
+}
+
+.openbtn2 span:nth-of-type(1) {
+  top: 22px;
+  width: 50%;
+}
+
+.openbtn2 span:nth-of-type(2) {
+  top: 29px;
+  width: 30%;
+}
+
+/*activeクラスが付与されると線が回転して×に*/
+.openbtn2.active span:nth-of-type(1) {
+  top: 20px;
+  left: 16px;
+  -webkit-transform: translateY(6px) rotate(-45deg);
+          transform: translateY(6px) rotate(-45deg);
+  width: 35%;
+}
+
+.openbtn2.active span:nth-of-type(2) {
+  top: 32px;
+  left: 16px;
+  -webkit-transform: translateY(-6px) rotate(45deg);
+          transform: translateY(-6px) rotate(45deg);
+  width: 35%;
+}
+
+.burger__lists {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2000;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, .9);
+  color: #fff;
+}
+
+.burger__list {
+  width: 100%;
+  height: auto;
+  padding: 0.5em 1em;
+  text-align: center;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  z-index: 2002;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+}
+
+.burger__list a {
+  color: #fff;
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+.burger__lists {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+/* アニメーション後のメニューの状態 */
+.burger__lists.is-active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .button a {
   display: inline-block;
   font-weight: 700;
@@ -995,7 +1111,7 @@ select::-ms-expand {
   background: black;
   width: 100%;
   position: fixed;
-  z-index: 999;
+  z-index: 2000;
   -webkit-transition: .3s all;
   transition: .3s all;
 }
@@ -1536,7 +1652,7 @@ select::-ms-expand {
   max-width: 150px;
   max-width: 9.375rem;
   width: 100%;
-  z-index: 1001;
+  z-index: 1000;
 }
 
 @media screen and (max-width: 767px) {

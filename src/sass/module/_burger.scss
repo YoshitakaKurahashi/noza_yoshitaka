@@ -1,0 +1,94 @@
+.burger {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+  }
+}
+
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn2 {
+  position: relative; /*ボタン内側の基点となるためrelativeを指定*/
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/*ボタン内側*/
+
+.openbtn2 span {
+  display: inline-block;
+  transition: all 0.4s; /*アニメーションの設定*/
+  position: absolute;
+  left: 13px;
+  height: 2px;
+  background-color: $white;
+  z-index: 2001;
+}
+
+.openbtn2 span:nth-of-type(1) {
+  top: 22px;
+  width: 50%;
+}
+
+.openbtn2 span:nth-of-type(2) {
+  top: 29px;
+  width: 30%;
+}
+
+/*activeクラスが付与されると線が回転して×に*/
+
+.openbtn2.active span:nth-of-type(1) {
+  top: 20px;
+  left: 16px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 35%;
+}
+
+.openbtn2.active span:nth-of-type(2) {
+  top: 32px;
+  left: 16px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 35%;
+}
+
+.burger__lists {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2000;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba($color: $black, $alpha: 0.9);
+  color: #fff;
+}
+
+.burger__list {
+  width: 100%;
+  height: auto;
+  padding: 0.5em 1em;
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2002;
+  margin-bottom: rem(20);
+
+  a {
+    color: #fff;
+    font-size: rem(32);
+  }
+}
+
+.burger__lists {
+  transform: translateX(100vw);
+  transition: all 0.3s linear;
+}
+/* アニメーション後のメニューの状態 */
+.burger__lists.is-active {
+  transform: translateX(0);
+}
