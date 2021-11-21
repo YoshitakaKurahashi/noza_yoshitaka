@@ -428,6 +428,14 @@ select::-ms-expand {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .button__Application a {
+    font-size: 1rem;
+    max-width: 13.75rem;
+    padding: 0.625rem 0;
+  }
+}
+
 .button__Application a:hover {
   top: 5px;
   -webkit-box-shadow: 0 5px 0 #060c41;
@@ -1507,6 +1515,12 @@ select::-ms-expand {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .recuruit {
+    padding: 5rem 0;
+  }
+}
+
 .section__title--recuruit {
   color: #FFFFFF;
   letter-spacing: 5%;
@@ -1515,12 +1529,24 @@ select::-ms-expand {
   margin-bottom: 5rem;
 }
 
+@media screen and (max-width: 767px) {
+  .section__title--recuruit {
+    margin-bottom: 1.875rem;
+  }
+}
+
 .section__title-back--recuruit {
   position: absolute;
   top: 0;
   right: 26px;
   right: 1.625rem;
   color: rgba(255, 255, 255, .15);
+}
+
+@media screen and (max-width: 767px) {
+  .section__title-back--recuruit {
+    left: 0;
+  }
 }
 
 .recuruit__lead {
@@ -1543,6 +1569,12 @@ select::-ms-expand {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .recuruit__lead {
+    font-size: 1rem;
+  }
+}
+
 .recuruit__lead::before, .recuruit__lead::after {
   content: "";
   width: 2px;
@@ -1550,6 +1582,12 @@ select::-ms-expand {
   height: 70px;
   height: 4.375rem;
   background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  .recuruit__lead::before, .recuruit__lead::after {
+    content: none;
+  }
 }
 
 .recuruit__lead::before {
@@ -1571,6 +1609,12 @@ select::-ms-expand {
   margin: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .recuruit__img {
+    max-width: 14.375rem;
+  }
+}
+
 .recuruit__details {
   max-width: 750px;
   max-width: 46.875rem;
@@ -1580,6 +1624,13 @@ select::-ms-expand {
   border: 5px solid #a3a3a3;
   padding: 60px 0;
   padding: 3.75rem 0;
+}
+
+@media screen and (max-width: 767px) {
+  .recuruit__details {
+    max-width: 33.75rem;
+    padding: 1.875rem 0.625rem;
+  }
 }
 
 .recuruit__detail {
@@ -1615,9 +1666,21 @@ select::-ms-expand {
   display: inline-block;
 }
 
+@media screen and (max-width: 767px) {
+  .recuruit__content dt {
+    max-width: 5.625rem;
+  }
+}
+
 .recuruit__content dd {
   display: inline-block;
   width: calc(100% - 7.8125rem);
+}
+
+@media screen and (max-width: 767px) {
+  .recuruit__content dd {
+    width: calc(100% - 5.625rem);
+  }
 }
 
 .recuruit__content dd:not(:last-child) {

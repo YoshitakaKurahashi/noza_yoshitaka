@@ -3,6 +3,10 @@
   padding-top: rem(148);
   padding-bottom: rem(144);
   position: relative;
+
+  @include mq(md) {
+    padding: rem(80) 0;
+  }
 }
 
 .section__title--recuruit {
@@ -10,6 +14,10 @@
   letter-spacing: 5%;
   text-align: center;
   margin-bottom: rem(80);
+
+  @include mq(md) {
+    margin-bottom: rem(30);
+  }
 }
 
 .section__title-back--recuruit {
@@ -17,6 +25,9 @@
   top: 0;
   right: rem(26);
   color: rgba(255, 255, 255, 0.15);
+  @include mq(md) {
+    left: 0;
+  }
 }
 
 .recuruit__lead {
@@ -30,12 +41,21 @@
 	justify-content: center;
 	align-items: center;
 
+  @include mq(md) {
+    font-size: rem(16);
+    
+  }
+
   &::before,
   &::after {
     content: "";
     width: rem(2);
     height: rem(70);
     background-color: $white;
+
+    @include mq(md) {
+      content: none;
+    }
   }
 
   &::before {
@@ -52,6 +72,10 @@
   max-width: rem(600);
   width: 100%;
   margin: auto;
+
+  @include mq(md) {
+    max-width: rem(230);
+  }
   img {
   }
 }
@@ -63,6 +87,11 @@
   background: $white;
   border: 5px solid #a3a3a3;
   padding: rem(60) 0;
+
+  @include mq(md) {
+    max-width: rem(540);
+    padding: rem(30) rem(10);
+  }
 }
 
 .recuruit__detail {
@@ -70,6 +99,9 @@
   width: 100%;
   margin: auto;
   margin-bottom: rem(55);
+
+  @include mq(md) {
+  }
 }
 
 .recuruit__content {
@@ -77,6 +109,9 @@
   line-height: rem(19);
   display: flex;
   flex-wrap: wrap;
+
+  @include mq(md) {
+  }
 
   &:not(:last-child) {
     margin-bottom: rem(48);
@@ -87,11 +122,20 @@
     width: 100%;
     text-align: left;
     display: inline-block;
+
+    @include mq(md) {
+      max-width: rem(90);
+    }
   }
 
   dd {
     display: inline-block;
     width: calc(100% - #{rem(125)});
+
+    @include mq(md) {
+    width: calc(100% - #{rem(90)});
+    }
+
     &:not(:last-child) {
       margin-bottom: rem(48);
     }

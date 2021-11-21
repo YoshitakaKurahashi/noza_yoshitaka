@@ -23,6 +23,12 @@
     // -webkit-transition: none;
     position: relative;
 
+    @include mq(md) {
+      font-size: rem(16);
+      max-width: rem(220);
+      padding: rem(10) 0;
+    }
+
     &:hover {
       top: 5px;
       box-shadow: 0 5px 0 #060c41;
