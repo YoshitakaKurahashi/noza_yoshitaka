@@ -176,30 +176,63 @@
   }
 }
 
+// .submit-button {
+//   display: block;
+//   font-size: rem(24);
+//   font-weight: $bold;
+//   line-height: rem(32);
+//   letter-spacing: 2%;
+//   text-align: center;
+//   padding: rem(20) 0;
+//   max-width: rem(381);
+//   border-radius: rem(100);
+//   background: #0e112c;
+//   color: $white;
+//   margin: auto;
+//   cursor: pointer;
+//   transition: 0.3s all;
+  
+//   // &:hover {
+//   //   transition: 0.3s all;
+//   //   opacity: 0.6;
+//   // }
+
+//   input {
+//   color: $white;
+//   }
+// }
+
+.submit-btn {
+max-width: rem(381);
+width: 100%;
+margin: auto;
+display: block;
+
+}
+
 .submit-button {
-  a {
-    display: block;
-    font-size: rem(24);
-    font-weight: $bold;
-    line-height: rem(32);
-    letter-spacing: 2%;
-    text-align: center;
-    padding: rem(20) 0;
-    max-width: rem(381);
-    border-radius: rem(100);
-    background: #0e112c;
-    color: $white;
-    margin: auto;
-    cursor: pointer;
-    transition: 0.3s all;
+  padding: rem(20) 0;
+  width: 100%;
+  background: #0E112C;
+  color: $white;
+  text-align: center;
+  font-size: rem(24);
+  line-height: rem(32);
+  letter-spacing: 2%;
+  font-weight: $bold;
+  border-radius: rem(100);
+  cursor: pointer;
+  transition: .3s all;
 
-    &:hover {
-      transition: 0.3s all;
-      opacity: 0.6;
-    }
+  &:hover {
+    opacity: .6;
+  }
+}
 
-    input {
-      color: $white;
-    }
+.-disabled {
+  background: #bdbdbd;
+
+  &:hover {
+    opacity: 1;
   }
 }

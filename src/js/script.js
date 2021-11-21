@@ -86,4 +86,32 @@ function fadeAnime(){
 $(window).scroll(function (){
   fadeAnime();/* アニメーション用の関数を呼ぶ*/
 });// ここまで画面をスクロールをしたら動かしたい場合の記述
+
+	// formの入力確認 ////////////////////////////////////////////////////////////
+	let $submit = $('#js-submit')
+	//formとtextareaに変更が加えられた時にファンクションが起動！
+	$('#js-form input').on('change', function() {
+		if(
+			//「お名前」が”空”ではない かつ
+			$('#js-form input[name="my-name"]').val() !== "" &&
+			//「フリガナ」が”空”ではない かつ
+			$('#js-form input[name="my-kana"]').val() !== "" &&
+			//「誕生日」が”空”ではない かつ
+			$('#js-form input[name="my-birthday"]').val() !== "" &&
+			//「メールアドレス」が”空”ではない かつ
+			$('#js-form input[name="my-email"]').val() !== "" &&
+			//「プライバシーポリシー」に”チェック”が入っている場合
+			$('#js-form input[name="my-check"]').prop('checked') === true
+			) {
+				//設定しているdisabledをfalseにする
+				$submit.prop('disabled', false)
+				//”-disabled”クラスを取り除き#js-submit本来の装いを実行
+				$submit.removeClass('-disabled')
+			} else {
+				//設定しているdisabledをtrueのままにする
+				$submit.prop('disabled', true)
+				//”-disabled”クラスを付与して色を変えたりhoverアクションをキャンセル
+				$submit.addClass('-disabled')
+			}
+		})
 });

@@ -42,7 +42,7 @@
       <div class="l-inner header__inner">
         <h1 class="header__logo">
           <a href="#">
-            <img src="/assets/images/common/logo.png" alt="NOZAのロゴ" />
+            <img src="/assets/images/common/logo.png" alt="NOZA 宇宙飛行士、募集中" />
           </a>
         </h1>
         <!-- /.header__logo -->
@@ -426,81 +426,95 @@
           令和3年10月中旬にNOZAより通知をお送りいたします。
         </p>
         <!-- /.form__lead -->
-        <form action="" class="form">
+        <form id="js-form" action="" class="form">
           <div class="form__content">
             <div class="form__label">
-              <label for="" class="label">お名前</label
+              <label for="name" class="label">お名前</label
               ><!-- /.label -->
             </div>
             <!-- /.form__label -->
             <input
               type="text"
               class="input"
+              id="name"
+              name="my-name"
+              required
               placeholder="お名前をご記入ください"
             />
           </div>
           <!-- /.form__content -->
           <div class="form__content">
             <div class="form__label">
-              <label for="" class="label">フリガナ</label
+              <label for="kana" class="label">フリガナ</label
               ><!-- /.label -->
             </div>
             <!-- /.form__label -->
             <input
               type="text"
               class="input"
+              id="kana"
+              name="my-kana"
+              required
               placeholder="フリガナをご記入ください"
             />
           </div>
           <!-- /.form__content -->
           <div class="form__content">
             <div class="form__label">
-              <label for="" class="label">生年月日</label
+              <label for="birthday" class="label">生年月日</label
               ><!-- /.label -->
             </div>
             <!-- /.form__label -->
             <input
               type="text"
               class="input"
+              id="birthday"
+              name="my-birthday"
+              required
               placeholder="生年月日をご記入ください"
             />
           </div>
           <!-- /.form__content -->
           <div class="form__content">
             <div class="form__label">
-              <label for="" class="label">メールアドレス</label
+              <label for="email" class="label">メールアドレス</label
               ><!-- /.label -->
             </div>
             <!-- /.form__label -->
             <input
-              type="text"
+              type="email"
               class="input"
+              id="email"
+              name="my-email"
+              required
               placeholder="メールアドレスをご記入ください"
             />
           </div>
           <!-- /.form__content -->
           <div class="form__content">
             <div class="form__label">
-              <label for="" class="label">ご住所</label
+              <label for="address" class="label">ご住所</label
               ><!-- /.label -->
             </div>
             <!-- /.form__label -->
             <input
               type="text"
               class="input"
+              id="address"
+              required
               placeholder="ご住所をご記入ください"
             />
           </div>
           <!-- /.form__content -->
           <div class="form__content">
             <div class="form__label">
-              <label for="" class="label">ご質問など</label
+              <label for="question" class="label">ご質問など</label
               ><!-- /.label -->
             </div>
             <!-- /.form__label -->
             <textarea
               name=""
-              id=""
+              id="question"
               cols="30"
               rows="10"
               placeholder="ご質問などがあればご記入ください"
@@ -511,16 +525,14 @@
           <!-- /.form__content -->
           <div class="form__check">
             <label for="subscribe" class="check-label">
-              <input type="checkbox" class="form-check" id="subscribe" />
+              <input name="my-check" type="checkbox" class="form-check" id="subscribe" />
               <span></span> <a href="">プライバシーポリシーに同意する</a></label
             ><!-- /.check-label -->
           </div>
           <!-- /.form__check -->
-          <div class="submit-button">
-            <a href="">
-              <input type="submit" value="送信する" />
-            </a>
-          </div>
+          <a href="" class="submit-btn">
+            <input id="js-submit" type="submit" value="送信する" class="submit-button -disabled" disabled/>
+          </a>
           <!-- /.submit-button -->
         </form>
         <!-- /.form -->
@@ -569,19 +581,27 @@
       <div class="footer__sns">
         <ul class="footer__icons">
           <li class="footer__icon">
-            <a href=""><img src="/assets/images/common/twitter.png" alt=""></a>
+            <a href=""
+              ><img src="/assets/images/common/twitter.png" alt=""
+            /></a>
           </li>
           <!-- /.footer__icon -->
           <li class="footer__icon">
-            <a href=""><img src="/assets/images/common/facebook.png" alt=""></a>
+            <a href=""
+              ><img src="/assets/images/common/facebook.png" alt=""
+            /></a>
           </li>
           <!-- /.footer__icon -->
           <li class="footer__icon">
-            <a href=""><img src="/assets/images/common/Group 828.png" alt=""></a>
+            <a href=""
+              ><img src="/assets/images/common/Group 828.png" alt=""
+            /></a>
           </li>
           <!-- /.footer__icon -->
           <li class="footer__icon">
-            <a href=""><img src="/assets/images/common/instagram.png" alt=""></a>
+            <a href=""
+              ><img src="/assets/images/common/instagram.png" alt=""
+            /></a>
           </li>
           <!-- /.footer__icon -->
         </ul>

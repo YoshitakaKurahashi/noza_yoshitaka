@@ -3,6 +3,11 @@
   font-size: rem(48);
   font-weight: $bold;
   line-height: rem(48);
+
+  @include mq(md) {
+    font-size: rem(36);
+    line-height: rem(36);
+  }
 }
 
 // セクションタイトル（背景タイトル）
@@ -12,5 +17,10 @@
   font-weight: $bold;
   line-height: rem(150);
   letter-spacing: 2%;
+
+  @include mq(md) {
+    font-size: rem(65);
+    line-height: rem(65);
+  }
 }
 

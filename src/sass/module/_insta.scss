@@ -1,7 +1,13 @@
 .instagram {
   padding-top: rem(145);
   padding-bottom: rem(145);
-  background: linear-gradient(90deg, #ffffff 0%, #ffffff 70%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #ffffff 70%,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0) 100%
+  );
   position: relative;
 }
 
@@ -94,12 +100,15 @@
 .insta-content__img {
   // max-width: rem(300);
   // width: 100%;
+
   img {
+    transition: 0.3s all;
 
     &:hover {
-      box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
-      transform: translateY(-10px) scale(1.2) rotate(3deg);
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+      transform: translateY(-10px);
       transition-duration: 0.5s;
+      transition: 0.3s all;
     }
   }
 }
