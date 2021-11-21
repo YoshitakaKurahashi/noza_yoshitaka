@@ -4,4 +4,11 @@
   right: rem(40);
   max-width: rem(150);
   width: 100%;
+  z-index: 1001;
+
+  @include mq(md) {
+    bottom: rem(10);
+    right: rem(10);
+    max-width: rem(85);
+  }
 }
