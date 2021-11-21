@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-  background: url(/assets/images/common/about-back.jpg) center center / cover;
+  background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/about-back.jpg) center center / cover;
   position: relative;
   padding: rem(144) 0 rem(146);
 
@@ -51,7 +51,7 @@
 
   &:first-child {
     .about__content--img::after {
-      background: url(/assets/images/common/Ⅰ.png) center center/ contain;
+      background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/Ⅰ.png) center center/ contain;
       background-repeat: no-repeat;
 
       @include mq(md) {
@@ -77,7 +77,7 @@
     }
 
     .about__content--img::after {
-      background: url(/assets/images/common/Ⅱ.png) center center / contain;
+      background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/Ⅱ.png) center center / contain;
       background-repeat: no-repeat;
 
       @include mq(md) {
@@ -88,7 +88,7 @@
 
   &:last-child {
     .about__content--img::after {
-      background: url(/assets/images/common/Ⅲ.png) center center / contain;
+      background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/Ⅲ.png) center center / contain;
       background-repeat: no-repeat;
 
       @include mq(md) {

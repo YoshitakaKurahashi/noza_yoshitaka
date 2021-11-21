@@ -110,7 +110,7 @@ jQuery(function ($) {
     $('.burger__lists').toggleClass('is-active');
   });
   $(".burger__list").click(function () {
-    $(this).removeClass('active');
+    // $(this).removeClass('active');
     $(".burger__lists").removeClass('is-active');
   });
 });

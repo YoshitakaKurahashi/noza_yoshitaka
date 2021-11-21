@@ -192,7 +192,7 @@ select::-ms-expand {
 
 .about {
   width: 100%;
-  background: url(/assets/images/common/about-back.jpg) center center/cover;
+  background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/about-back.jpg) center center/cover;
   position: relative;
   padding: 144px 0 146px;
   padding: 9rem 0 9.125rem;
@@ -255,7 +255,7 @@ select::-ms-expand {
 }
 
 .about__content:first-child .about__content--img::after {
-  background: url(/assets/images/common/Ⅰ.png) center center/contain;
+  background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/Ⅰ.png) center center/contain;
   background-repeat: no-repeat;
 }
 
@@ -290,7 +290,7 @@ select::-ms-expand {
 }
 
 .about__content:nth-child(2n) .about__content--img::after {
-  background: url(/assets/images/common/Ⅱ.png) center center/contain;
+  background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/Ⅱ.png) center center/contain;
   background-repeat: no-repeat;
 }
 
@@ -301,7 +301,7 @@ select::-ms-expand {
 }
 
 .about__content:last-child .about__content--img::after {
-  background: url(/assets/images/common/Ⅲ.png) center center/contain;
+  background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/Ⅲ.png) center center/contain;
   background-repeat: no-repeat;
 }
 
@@ -795,7 +795,7 @@ select::-ms-expand {
 }
 
 .application-form {
-  background: url(/assets/images/common/form-back.png) center center/cover;
+  background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/form-back.png) center center/cover;
   padding-top: 150px;
   padding-top: 9.375rem;
   padding-bottom: 150px;
@@ -1025,7 +1025,7 @@ select::-ms-expand {
 }
 
 .form-check + span::after {
-  background: transparent url(/assets/images/common/Group.png) center center/cover;
+  background: transparent url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/Group.png) center center/cover;
   width: 16px;
   width: 1rem;
   height: 12px;
@@ -1506,7 +1506,7 @@ select::-ms-expand {
 }
 
 .main-view {
-  background: url(/assets/images/common/mv.png) center center/cover;
+  background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/mv.png) center center/cover;
   width: 100%;
   padding: 387px 0px 270px 120px;
   padding: 24.1875rem 0rem 16.875rem 7.5rem;
@@ -1664,7 +1664,7 @@ select::-ms-expand {
 }
 
 .question {
-  background: url(/assets/images/common/q&a-back.png) center center/cover;
+  background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/q&a-back.png) center center/cover;
   padding-top: 146px;
   padding-top: 9.125rem;
   padding-bottom: 146px;
@@ -1871,7 +1871,7 @@ select::-ms-expand {
 }
 
 .recuruit {
-  background: url(/assets/images/common/recuruit-back.png) center center/cover;
+  background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/recuruit-back.png) center center/cover;
   padding-top: 148px;
   padding-top: 9.25rem;
   padding-bottom: 144px;
@@ -2149,7 +2149,7 @@ select::-ms-expand {
 }
 
 .summary {
-  background: url(/assets/images/common/under-back.png) center center/cover;
+  background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/under-back.png) center center/cover;
   padding: 50px 40px;
   padding: 3.125rem 2.5rem;
   display: -webkit-box;
@@ -2177,7 +2177,7 @@ select::-ms-expand {
 
 .summary-inner::before {
   content: "";
-  background: url(/assets/images/common/ryota-noza-2.png) center center/cover;
+  background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/ryota-noza-2.png) center center/cover;
   width: 58.8%;
   height: 100%;
   position: absolute;
