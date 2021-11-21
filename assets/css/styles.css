@@ -1119,12 +1119,26 @@ select::-ms-expand {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .instagram {
+    padding: 5rem 0;
+  }
+}
+
 .section__title--insta {
   letter-spacing: 2%;
   color: #333333;
   text-align: center;
   margin-bottom: 65px;
   margin-bottom: 4.0625rem;
+}
+
+@media screen and (max-width: 767px) {
+  .section__title--insta {
+    margin-bottom: 1.875rem;
+    position: relative;
+    z-index: 1000;
+  }
 }
 
 .section__title-back--insta {
@@ -1135,10 +1149,24 @@ select::-ms-expand {
   color: #e0e0e0;
 }
 
+@media screen and (max-width: 767px) {
+  .section__title-back--insta {
+    right: 0;
+  }
+}
+
 .insta-inner {
   margin-left: auto;
   margin-bottom: 58px;
   margin-bottom: 3.625rem;
+}
+
+@media screen and (max-width: 767px) {
+  .insta-inner {
+    padding: 0 1.25rem;
+    margin: auto;
+    margin-bottom: 1.875rem;
+  }
 }
 
 .more-button {
@@ -1219,10 +1247,23 @@ select::-ms-expand {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .insta-contents {
+    max-width: 33.75rem;
+  }
+}
+
 .insta-content {
   max-width: 300px;
   max-width: 18.75rem;
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .insta-content {
+    max-width: 100%;
+    margin: auto;
+  }
 }
 
 .insta-content__img img {

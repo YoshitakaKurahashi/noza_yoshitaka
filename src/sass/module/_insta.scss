@@ -9,6 +9,10 @@
     rgba(0, 0, 0, 0) 100%
   );
   position: relative;
+
+  @include mq(md) {
+    padding: rem(80) 0;
+  }
 }
 
 .section__title--insta {
@@ -16,6 +20,12 @@
   color: #333333;
   text-align: center;
   margin-bottom: rem(65);
+
+  @include mq(md) {
+    margin-bottom: rem(30);
+    position: relative;
+    z-index: 1000;
+  }
 }
 
 .section__title-back--insta {
@@ -23,11 +33,21 @@
   top: 0;
   right: rem(25);
   color: #e0e0e0;
+
+  @include mq(md) {
+    right: 0;
+  }
 }
 
 .insta-inner {
   margin-left: auto;
   margin-bottom: rem(58);
+
+  @include mq(md) {
+    padding: 0 rem(20);
+    margin: auto;
+    margin-bottom: rem(30);
+  }
 }
 
 .more-button {
@@ -90,11 +110,20 @@
   flex-wrap: wrap;
   max-width: rem(1200);
   width: 100%;
+
+  @include mq(md) {
+    max-width: rem(540);
+  }
 }
 
 .insta-content {
   max-width: rem(300);
   width: 100%;
+
+  @include mq(md) {
+    max-width: 100%;
+    margin: auto;
+  }
 }
 
 .insta-content__img {
