@@ -660,6 +660,12 @@ select::-ms-expand {
   padding-bottom: 9.375rem;
 }
 
+@media screen and (max-width: 767px) {
+  .application-form {
+    padding: 5rem 1.25rem;
+  }
+}
+
 .application-form__inner {
   max-width: 920px;
   max-width: 57.5rem;
@@ -671,6 +677,13 @@ select::-ms-expand {
   margin: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .application-form__inner {
+    max-width: 33.75rem;
+    padding: 1.875rem 1.25rem;
+  }
 }
 
 .section__title--form {
@@ -694,6 +707,13 @@ select::-ms-expand {
   display: flex;
   margin-bottom: 40px;
   margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .form__content {
+    display: block;
+    margin-bottom: 1.875rem;
+  }
 }
 
 .form__content:not(:nth-child(6)) {
@@ -736,6 +756,12 @@ select::-ms-expand {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .form__label {
+    margin-bottom: 0.625rem;
+  }
+}
+
 .label {
   display: inline-block;
   padding-right: 55px;
@@ -759,6 +785,14 @@ select::-ms-expand {
   -webkit-transition: .3s all;
   transition: .3s all;
   border-radius: 0.125rem;
+}
+
+@media screen and (max-width: 767px) {
+  .input,
+  .textarea {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .input::-webkit-input-placeholder,
@@ -887,6 +921,12 @@ select::-ms-expand {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .submit-btn {
+    max-width: 13.75rem;
+  }
+}
+
 .submit-button {
   padding: 20px 0;
   padding: 1.25rem 0;
@@ -904,6 +944,13 @@ select::-ms-expand {
   cursor: pointer;
   -webkit-transition: .3s all;
   transition: .3s all;
+}
+
+@media screen and (max-width: 767px) {
+  .submit-button {
+    padding: 0.625rem 0;
+    font-size: 1rem;
+  }
 }
 
 .submit-button:hover {
@@ -1514,6 +1561,12 @@ select::-ms-expand {
   max-width: 46.875rem;
   width: 100%;
   margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .qa-content {
+    max-width: 33.75rem;
+  }
 }
 
 .qa-content:not(:last-child) {
