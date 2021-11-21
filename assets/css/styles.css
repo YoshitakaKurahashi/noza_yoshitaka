@@ -1996,6 +1996,12 @@ select::-ms-expand {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .summary {
+    padding: 2.5rem 1.25rem;
+  }
+}
+
 .summary-inner {
   padding-top: 125px;
   padding-top: 7.8125rem;
@@ -2016,9 +2022,22 @@ select::-ms-expand {
   z-index: 10;
 }
 
+@media screen and (max-width: 767px) {
+  .summary-inner::before {
+    max-width: 33.75rem;
+    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-box-shadow: 0 0 15px 0 #FFFFFF;
+            box-shadow: 0 0 15px 0 #FFFFFF;
+  }
+}
+
 .summary__content {
   max-width: 700px;
   max-width: 43.75rem;
+  width: 100%;
   background: #FFFFFF;
   padding: 45px 20px 45px 29px;
   padding: 2.8125rem 1.25rem 2.8125rem 1.8125rem;
@@ -2035,6 +2054,19 @@ select::-ms-expand {
   z-index: 100;
 }
 
+@media screen and (max-width: 767px) {
+  .summary__content {
+    max-width: 33.75rem;
+    font-size: 1.5rem;
+    padding: 1.875rem 1.25rem;
+    margin: auto;
+    line-height: 2.25rem;
+    background: none;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 0 #000000;
+  }
+}
+
 .summary__content span {
   display: inline-block;
   font-size: 24px;
@@ -2042,6 +2074,15 @@ select::-ms-expand {
   line-height: 32px;
   line-height: 2rem;
   font-family: "Nothing You Could Do", cursive;
+}
+
+@media screen and (max-width: 767px) {
+  .summary__content span {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #FFFFFF;
+    text-shadow: 4px 4px 0 #000000;
+  }
 }
 
 .appp {
