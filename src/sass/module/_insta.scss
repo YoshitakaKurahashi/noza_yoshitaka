@@ -12,6 +12,13 @@
 
   @include mq(md) {
     padding: rem(80) 0;
+    background: linear-gradient(
+      90deg,
+      #ffffff 0%,
+      #ffffff 60%,
+      rgba(0, 0, 0, 0) 40%,
+      rgba(0, 0, 0, 0) 100%
+    );
   }
 }
 

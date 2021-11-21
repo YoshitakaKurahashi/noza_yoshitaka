@@ -1122,6 +1122,8 @@ select::-ms-expand {
 @media screen and (max-width: 767px) {
   .instagram {
     padding: 5rem 0;
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(60%, #ffffff), color-stop(40%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 60%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%);
   }
 }
 
@@ -1858,9 +1860,15 @@ select::-ms-expand {
 }
 
 .section-back {
-  background: #0E112C;
   background: -webkit-gradient(linear, left top, left bottom, from(#0E112C), color-stop(25%, #0E112C), color-stop(25%, #ACACAC), to(#ACACAC));
   background: linear-gradient(180deg, #0E112C 0%, #0E112C 25%, #ACACAC 25%, #ACACAC 100%);
+}
+
+@media screen and (max-width: 767px) {
+  .section-back {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0E112C), color-stop(10%, #0E112C), color-stop(10%, #ACACAC), to(#ACACAC));
+    background: linear-gradient(180deg, #0E112C 0%, #0E112C 10%, #ACACAC 10%, #ACACAC 100%);
+  }
 }
 
 .summary {
