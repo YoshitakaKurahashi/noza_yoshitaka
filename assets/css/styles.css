@@ -578,6 +578,13 @@ select::-ms-expand {
   margin: auto;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__logo {
+    max-width: 9.375rem;
+    margin-bottom: 0.9375rem;
+  }
+}
+
 .footer__nav {
   margin-bottom: 15px;
   margin-bottom: 0.9375rem;
@@ -596,9 +603,22 @@ select::-ms-expand {
           justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__lists {
+    display: block;
+    text-align: center;
+  }
+}
+
 .footer__list {
   margin: 0 20px;
   margin: 0 1.25rem;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__list {
+    margin: 0 0.625rem;
+  }
 }
 
 .footer__list a {
@@ -609,6 +629,12 @@ select::-ms-expand {
   padding-bottom: 0.9375rem;
   -webkit-transition: .3s all;
   transition: .3s all;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__list a {
+    padding: 0.625rem 0;
+  }
 }
 
 .footer__list a:hover {

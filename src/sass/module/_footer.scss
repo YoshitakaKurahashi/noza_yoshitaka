@@ -8,12 +8,21 @@
   max-width: rem(200);
   width: 100%;
   margin: auto;
+
+  @include mq(md) {
+    max-width: rem(150);
+    margin-bottom: rem(15);
+  }
   img {
   }
 }
 
 .footer__nav {
   margin-bottom: rem(15);
+
+  @include mq(md) {
+
+  }
 }
 
 .footer__lists {
@@ -21,15 +30,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include mq(md) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .footer__list {
   margin: 0 rem(20);
+  
+  @include mq(md) {
+  margin: 0 rem(10);
+
+  }
+
   a {
     display: inline-block;
     padding-top: rem(20);
     padding-bottom: rem(15);
     transition: .3s all;
+
+    @include mq(md) {
+      padding: rem(10) 0;
+    }
 
     &:hover {
       opacity: .6;
