@@ -60,6 +60,17 @@ a {
   cursor: pointer;
 }
 
+/* SP時のタイトル改行 */
+.pc-none {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .pc-none {
+    display: block;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -808,6 +819,12 @@ select::-ms-expand {
 }
 
 @media screen and (max-width: 767px) {
+  .header__logo {
+    max-width: 9.375rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .header__nav {
     display: none;
   }
@@ -1132,6 +1149,13 @@ select::-ms-expand {
   padding: 24.1875rem 0rem 16.875rem 7.5rem;
 }
 
+@media screen and (max-width: 767px) {
+  .main-view {
+    padding: 25rem 1.25rem 6.25rem;
+    background-position: right center;
+  }
+}
+
 .main-view__title {
   margin-bottom: 40px;
   margin-bottom: 2.5rem;
@@ -1163,6 +1187,15 @@ select::-ms-expand {
   /* マウスオーバー時 */
 }
 
+@media screen and (max-width: 767px) {
+  .main-view__title a {
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    padding: 0.9375rem 0.3125rem;
+    text-align: center;
+  }
+}
+
 .main-view__title a:hover {
   border-color: #fff;
   -webkit-box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
@@ -1180,6 +1213,13 @@ select::-ms-expand {
   line-height: 36px;
   line-height: 2.25rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .main-view__liad {
+    font-size: 1rem;
+    text-shadow: 1px 2px 3px #808080;
+  }
 }
 
 .main-view__liad span {

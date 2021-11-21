@@ -3,10 +3,19 @@
   width: 100%;
   // height: rem(900);
   padding: rem(387) rem(0) rem(270) rem(120);
+
+  @include mq(md) {
+    padding: rem(400) rem(20) rem(100);
+    background-position: right center;
+  }
 }
 
 .main-view__title {
   margin-bottom: rem(40);
+
+  @include mq(md) {
+    
+  }
 
   a {
     display: inline-block;
@@ -26,6 +35,13 @@
     text-shadow: none;
     transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
 
+    @include mq(md) {
+    font-size: rem(36);
+    line-height: rem(42);
+    padding: rem(15) rem(5);
+    text-align: center;
+    }
+
     /* マウスオーバー時 */
     &:hover {
       border-color: #fff;
@@ -44,11 +60,22 @@
   font-size: rem(24);
   line-height: rem(36);
   font-weight: $bold;
+
+  @include mq(md) {
+    font-size: rem(16);
+    // color: $black;
+    text-shadow: 1px 2px 3px #808080;
+  }
+
   span {
     display: inline-block;
     margin-top: rem(10);
     line-height: rem(32);
     font-family: $third-font-family;
+
+    @include mq(md) {
+    
+    }
   }
 }
 

@@ -33,3 +33,12 @@ a {
   transition: opacity 0.3s;
   cursor:pointer;
 }
+
+/* SP時のタイトル改行 */
+.pc-none {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+  }
+}
