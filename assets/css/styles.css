@@ -224,6 +224,7 @@ select::-ms-expand {
   top: 0;
   left: 25px;
   left: 1.5625rem;
+  letter-spacing: 0.038em;
 }
 
 @media screen and (max-width: 767px) {
@@ -551,8 +552,8 @@ select::-ms-expand {
   width: 100%;
   -webkit-transition: none;
   transition: none;
-  padding: 20px 0;
-  padding: 1.25rem 0;
+  padding: 16px 0;
+  padding: 1rem 0;
   -webkit-box-shadow: 0 10px 0 #060c41;
           box-shadow: 0 10px 0 #060c41;
   position: relative;
@@ -1901,7 +1902,7 @@ select::-ms-expand {
 
 .section__title--recuruit {
   color: #FFFFFF;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   text-align: center;
   margin-bottom: 80px;
   margin-bottom: 5rem;
@@ -1919,6 +1920,7 @@ select::-ms-expand {
   right: 26px;
   right: 1.625rem;
   color: rgba(255, 255, 255, .15);
+  letter-spacing: 0.005em;
 }
 
 @media screen and (max-width: 767px) {
@@ -1931,8 +1933,7 @@ select::-ms-expand {
   text-align: center;
   font-size: 20px;
   font-size: 1.25rem;
-  letter-spacing: 0.24px;
-  letter-spacing: 0.015rem;
+  letter-spacing: 0.015em;
   font-weight: 500;
   line-height: 30px;
   line-height: 1.875rem;
@@ -1961,8 +1962,8 @@ select::-ms-expand {
   content: "";
   width: 2px;
   width: 0.125rem;
-  height: 70px;
-  height: 4.375rem;
+  height: 60px;
+  height: 3.75rem;
   background-color: #FFFFFF;
 }
 
@@ -1975,15 +1976,17 @@ select::-ms-expand {
 }
 
 .recuruit__lead::before {
-  margin-right: 30px;
-  -webkit-transform: rotate(-35deg);
-          transform: rotate(-35deg);
+  margin-right: 12px;
+  margin-right: 0.75rem;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
 }
 
 .recuruit__lead::after {
-  margin-left: 30px;
-  -webkit-transform: rotate(35deg);
-          transform: rotate(35deg);
+  margin-left: 12px;
+  margin-left: 0.75rem;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
 }
 
 .recuruit__img {
@@ -2038,8 +2041,8 @@ select::-ms-expand {
 }
 
 .recuruit__content:not(:last-child) {
-  margin-bottom: 48px;
-  margin-bottom: 3rem;
+  margin-bottom: 51px;
+  margin-bottom: 3.1875rem;
 }
 
 .recuruit__content dt {
@@ -2146,7 +2149,6 @@ select::-ms-expand {
   font-weight: 700;
   line-height: 150px;
   line-height: 9.375rem;
-  letter-spacing: 0.038em;
 }
 
 @media screen and (max-width: 767px) {

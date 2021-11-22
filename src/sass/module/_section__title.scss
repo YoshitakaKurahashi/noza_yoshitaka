@@ -16,7 +16,6 @@
   font-size: rem(150);
   font-weight: $bold;
   line-height: rem(150);
-  letter-spacing: 0.038em;
 
   @include mq(md) {
     font-size: rem(65);

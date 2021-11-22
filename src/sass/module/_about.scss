@@ -26,6 +26,8 @@
   position: absolute;
   top: 0;
   left: rem(25);
+  letter-spacing: 0.038em;
+
 
   @include mq(md) {
     left: 0;

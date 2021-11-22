@@ -11,7 +11,7 @@
 
 .section__title--recuruit {
   color: $white;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   text-align: center;
   margin-bottom: rem(80);
 
@@ -25,6 +25,8 @@
   top: 0;
   right: rem(26);
   color: rgba(255, 255, 255, 0.15);
+  letter-spacing: 0.005em;
+
   @include mq(md) {
     left: 0;
   }
@@ -33,7 +35,7 @@
 .recuruit__lead {
   text-align: center;
   font-size: rem(20);
-  letter-spacing: 0.015rem;
+  letter-spacing: 0.015em;
   font-weight: $normal;
   line-height: rem(30);
   color: $white;
@@ -52,7 +54,7 @@
   &::after {
     content: "";
     width: rem(2);
-    height: rem(70);
+    height: rem(60);
     background-color: $white;
 
     @include mq(md) {
@@ -63,12 +65,12 @@
   }
 
   &::before {
-    margin-right: 30px;
-    transform: rotate(-35deg);
+    margin-right: rem(12);
+    transform: rotate(-30deg);
   }
   &::after {
-    margin-left: 30px;
-    transform: rotate(35deg);
+    margin-left: rem(12);
+    transform: rotate(30deg);
   }
 }
 
@@ -118,7 +120,7 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: rem(48);
+    margin-bottom: rem(51);
   }
 
   dt {
