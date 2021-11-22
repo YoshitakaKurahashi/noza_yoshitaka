@@ -12,7 +12,7 @@
 
 .section__title--about {
   color: $white;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   text-align: center;
   margin-bottom: rem(82);
 
@@ -50,9 +50,15 @@
   }
 
   &:first-child {
+    margin-bottom: rem(62);
+
     .about__content--img::after {
       background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/Ⅰ.png) center center/ contain;
       background-repeat: no-repeat;
+      top: rem(-42);
+      left: rem(18);
+      width: rem(121);
+      height: rem(104);
 
       @include mq(md) {
         width: rem(50);
@@ -60,12 +66,9 @@
     }
   }
 
-  &:not(:last-child) {
-    margin-bottom: rem(62);
-  }
-
   &:nth-child(2n) {
     flex-direction: row-reverse;
+    margin-bottom: rem(75);
 
     .about-card {
       margin: 0;
@@ -79,6 +82,10 @@
     .about__content--img::after {
       background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/Ⅱ.png) center center / contain;
       background-repeat: no-repeat;
+      top: rem(-67);
+      right: rem(8);
+      width: rem(133);
+      height: rem(156);
 
       @include mq(md) {
         width: rem(50);
@@ -90,6 +97,10 @@
     .about__content--img::after {
       background: url(https://yoshi-bar55.com/portfolio/noza/assets/images/common/Ⅲ.png) center center / contain;
       background-repeat: no-repeat;
+      top: rem(-77);
+      left: rem(-2);
+      width: rem(165);
+      height: rem(174);
 
       @include mq(md) {
         width: rem(50);
@@ -97,9 +108,6 @@
     }
   }
 
-  &:not(:last-child) {
-    margin-bottom: rem(62);
-  }
 }
 
 .about__content--img {
@@ -119,10 +127,6 @@
   &::after {
     content: "";
     position: absolute;
-    top: rem(-57);
-    left: rem(10);
-    width: rem(120);
-    height: rem(120);
     background-repeat: no-repeat;
   }
 
@@ -151,7 +155,7 @@ display: block;
 .about-card__lead {
   font-size: rem(36);
   line-height: rem(36);
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   margin-bottom: rem(30);
 
   @include mq(md) {
@@ -163,7 +167,7 @@ display: block;
 
 .about-card__text {
   line-height: rem(40);
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
 
   @include mq(md) {
     line-height: rem(25);
