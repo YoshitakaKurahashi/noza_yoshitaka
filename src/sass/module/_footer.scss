@@ -1,6 +1,6 @@
 .footer {
   background: $black;
-  padding-top: rem(30);
+  padding-top: rem(33);
   padding-bottom: rem(30);
 }
 
@@ -47,9 +47,10 @@
 
   a {
     display: inline-block;
-    padding-top: rem(20);
-    padding-bottom: rem(15);
+    padding-top: rem(23);
+    padding-bottom: rem(19);
     transition: .3s all;
+    letter-spacing: 0.02em;
 
     @include mq(md) {
       padding: rem(10) 0;
