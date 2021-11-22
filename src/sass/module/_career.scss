@@ -1,6 +1,6 @@
 .career {
   position: relative;
-  padding-top: rem(146);
+  padding-top: rem(141);
   padding-bottom: rem(145);
 
   @include mq(md) {
@@ -17,6 +17,7 @@
   color: $white;
   text-align: left;
   margin-bottom: rem(60);
+  letter-spacing: -0.018em;
 
   @include mq(md) {
     margin-bottom: rem(50);
@@ -26,9 +27,10 @@
 
 .section__title-back--career {
   position: absolute;
-  top: 0;
+  top: rem(-8);
   left: rem(25);
   color: rgba(255, 255, 255, 0.05);
+  letter-spacing: 0.005em;
 
   @include mq(md) {
     left: 0;
@@ -39,7 +41,7 @@
   font-size: rem(20);
   color: $white;
   line-height: rem(30);
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   max-width: rem(896);
   width: 100%;
   margin-bottom: rem(60);
@@ -57,7 +59,7 @@
   max-width: rem(1240);
   width: 100%;
   background: $white;
-  padding: rem(60) 0;
+  padding: rem(51) 0 rem(57);
 
   @include mq(md) {
     display: block;
@@ -76,10 +78,10 @@
 }
 
 .career-content__img {
-  max-width: rem(300);
+  max-width: rem(318);
   width: 100%;
   margin: auto;
-  margin-bottom: rem(20);
+  margin-bottom: rem(12);
 
   img {
   }
@@ -89,5 +91,5 @@
   text-align: center;
   font-size: rem(20);
   line-height: rem(30);
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
