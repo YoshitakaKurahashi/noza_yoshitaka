@@ -48,7 +48,7 @@
     font-weight: $normal;
     line-height: rem(32);
     letter-spacing: 2%;
-    display: inline-block;
+    display: block;
     padding: rem(34) 0;
     position: relative;
 
@@ -89,9 +89,10 @@
     line-height: rem(16);
     width: 100%;
     overflow: hidden;
-    padding: rem(22) 0;
+    padding: rem(17) 0;
     position: relative;
     opacity: 1;
+    font-size: rem(18);
 
     &:before {
       background-color: #fff;

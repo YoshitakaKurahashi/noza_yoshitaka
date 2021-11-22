@@ -33,7 +33,7 @@
 .recuruit__lead {
   text-align: center;
   font-size: rem(20);
-  letter-spacing: 2%;
+  letter-spacing: 0.015rem;
   font-weight: $normal;
   line-height: rem(30);
   color: $white;
@@ -42,8 +42,10 @@
 	align-items: center;
 
   @include mq(md) {
+    max-width: rem(540);
+    width: 100%;
     font-size: rem(16);
-    
+    display: block;
   }
 
   &::before,
@@ -55,6 +57,8 @@
 
     @include mq(md) {
       content: none;
+      width: 0;
+      height: 0;
     }
   }
 

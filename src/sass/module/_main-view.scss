@@ -22,10 +22,10 @@
     font-size: rem(64);
     font-weight: $bold;
     line-height: rem(60);
-    letter-spacing: 5%;
+    letter-spacing: rem(-1);
     padding: rem(31) 0 rem(31) rem(30);
-    max-width: rem(751);
-    width: 100%;
+    // max-width: rem(751);
+    // width: 100%;
     color: $white;
     background: linear-gradient(90deg, #ff0000 0%, #ffbb0e 100%);
     border: 1px solid transparent;
@@ -56,10 +56,10 @@
   }
 }
 
-.main-view__liad {
+.main-view__lead {
   color: $white;
   font-size: rem(24);
-  line-height: rem(36);
+  line-height: rem(38);
   font-weight: $bold;
 
   @include mq(md) {
