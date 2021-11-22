@@ -827,11 +827,11 @@ select::-ms-expand {
 }
 
 .application-form__inner {
-  max-width: 920px;
-  max-width: 57.5rem;
+  max-width: 901px;
+  max-width: 56.3125rem;
   width: 100%;
-  padding: 60px 145px;
-  padding: 3.75rem 9.0625rem;
+  padding: 50px 135px;
+  padding: 3.125rem 8.4375rem;
   background: #FFFFFF;
   border: 10px solid #a3a3a3;
   margin: auto;
@@ -848,7 +848,7 @@ select::-ms-expand {
 
 .section__title--form {
   text-align: center;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   margin-bottom: 40px;
   margin-bottom: 2.5rem;
 }
@@ -856,7 +856,7 @@ select::-ms-expand {
 .application-form__lead {
   line-height: 32px;
   line-height: 2rem;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   margin-bottom: 40px;
   margin-bottom: 2.5rem;
 }
@@ -865,8 +865,13 @@ select::-ms-expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 40px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 31px;
+  margin-bottom: 1.9375rem;
+}
+
+.form__content:nth-child(5) {
+  margin-bottom: 27px;
+  margin-bottom: 1.6875rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -938,8 +943,8 @@ select::-ms-expand {
   width: calc(100% - 13.25rem);
   display: block;
   border: 1px solid #5b5b5b;
-  padding: 17px 20px;
-  padding: 1.0625rem 1.25rem;
+  padding: 15px 20px;
+  padding: 0.9375rem 1.25rem;
   line-height: 17px;
   line-height: 1.0625rem;
   -webkit-transition: .3s all;
@@ -983,15 +988,15 @@ select::-ms-expand {
 }
 
 .textarea {
-  max-height: 200px;
-  max-height: 12.5rem;
+  max-height: 202px;
+  max-height: 12.625rem;
   height: 100%;
 }
 
 .form__check {
   text-align: center;
-  margin-bottom: 42px;
-  margin-bottom: 2.625rem;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   width: 100%;
 }
 
@@ -1009,14 +1014,14 @@ select::-ms-expand {
 }
 
 .form-check + span {
-  padding: 0 0 0 50px;
-  padding: 0 0 0 3.125rem;
+  padding: 0 0 0 49px;
+  padding: 0 0 0 3.0625rem;
   position: relative;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   line-height: 30px;
   line-height: 1.875rem;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   margin-left: 20px;
   margin-left: 1.25rem;
 }
@@ -1098,7 +1103,7 @@ select::-ms-expand {
   font-size: 1.5rem;
   line-height: 32px;
   line-height: 2rem;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   font-weight: 700;
   border-radius: 6.25rem;
   cursor: pointer;
@@ -1319,8 +1324,8 @@ select::-ms-expand {
 }
 
 .instagram {
-  padding-top: 145px;
-  padding-top: 9.0625rem;
+  padding-top: 147px;
+  padding-top: 9.1875rem;
   padding-bottom: 145px;
   padding-bottom: 9.0625rem;
   background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(70%, #ffffff), color-stop(30%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
@@ -1337,11 +1342,11 @@ select::-ms-expand {
 }
 
 .section__title--insta {
-  letter-spacing: 2%;
+  letter-spacing: -0.018em;
   color: #333333;
   text-align: center;
-  margin-bottom: 65px;
-  margin-bottom: 4.0625rem;
+  margin-bottom: 61px;
+  margin-bottom: 3.8125rem;
   position: relative;
   z-index: 1000;
 }
@@ -1358,6 +1363,7 @@ select::-ms-expand {
   right: 25px;
   right: 1.5625rem;
   color: #e0e0e0;
+  letter-spacing: 0.015em;
 }
 
 @media screen and (max-width: 767px) {
