@@ -1,0 +1,5 @@
+
+AuthUserFile "/home/xs288744/yoshi-bar55.com/htpasswd/portfolio/ibow-noza20211122/.htpasswd"
+AuthName "Member Site"
+AuthType BASIC
+require valid-user
